@@ -1,0 +1,255 @@
+body {
+  background-image: url("https://uclbranding.uefa.com/assets/img/carousel-1.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+  color: White;
+  display: flex;
+  flex-direction: column;
+}
+/* navigation */
+
+.nav-ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #5c697d;
+  color: white;
+  opacity: 90%;
+  border-radius: 1em;
+}
+
+.nav-li {
+  font-size: 20px;
+}
+
+.nav-li a {
+  color: white;
+  text-decoration: none;
+  padding: 5px 5px;
+  margin: 5px 5px;
+}
+.nav-li a:hover,
+a:active,
+a:visited {
+  color: white;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+.nav-li a:hover:not(.active) {
+  background-color: rgb(29, 63, 173);
+}
+
+/* body elements */
+
+h2 {
+  margin: 20px;
+}
+
+h1 {
+  padding-top: 20px;
+}
+
+.matches-table td,
+.matches-table th {
+  padding: 5px;
+  color: #242733;
+}
+
+td,
+th {
+  padding: 20px;
+  color: #242733;
+}
+
+caption {
+  color: white;
+}
+
+main {
+  display: flex;
+  flex-direction: row;
+  flex: auto;
+}
+
+a:link {
+  color: #0c0b17;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover,
+a:active,
+a:visited {
+  color: #0c0b17;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+/* body Classes and IDs */
+
+.main-article {
+  flex: 2;
+  overflow-y: auto;
+}
+@media screen and (max-width: 700px) {
+  .teams,
+  .nav-li {
+    font-size: 2.5vw;
+  }
+}
+@media screen and (max-width: 400px) {
+  .tweets table td {
+    max-width: 28vw;
+    margin: auto;
+    display: block;
+  }
+}
+
+h2,
+h3 {
+  font-size: calc(20px + 6 * ((100vw - 320px) / 680));
+}
+h1 {
+  font-size: calc(24px + 6 * ((100vw - 320px) / 680));
+}
+p {
+  font-size: calc(16px + 6 * ((100vw - 320px) / 680));
+}
+
+.teams {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  opacity: 90%;
+}
+.teams td {
+  border: 1px solid #ddd;
+  padding: 13px;
+  margin: 17px;
+}
+
+.teams tr:nth-child(even) {
+  background-color: #ddd;
+}
+.teams tr:nth-child(odd) {
+  background-color: #ddd;
+}
+
+.teams td:hover {
+  background-color: #5c697d;
+}
+
+.teams th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #5c697d;
+  color: white;
+}
+
+.upcoming-matches {
+  border: 1px solid #bbb;
+  background: #ddd;
+  color: black;
+  border-radius: 10px;
+  padding: 20px 20px;
+  opacity: 90%;
+}
+
+.all-browsers > h1,
+.browser {
+  margin: 10px;
+  padding: 5px;
+}
+
+.browser {
+  background-color: rgb(221, 221, 221);
+  color: #242733;
+  width: 100%;
+  opacity: 90%;
+  border-radius: 5%;
+}
+
+.small,
+.big {
+  cursor: pointer;
+}
+
+.small-img-container {
+  color: white;
+}
+
+/* aside */
+
+aside {
+  background-color: #ddd;
+  flex: 1;
+  overflow-y: auto;
+  opacity: 85%;
+  margin-top: 70px;
+  margin-bottom: 50px;
+  border-radius: 1%;
+}
+
+/* footer */
+
+footer {
+  text-align: center;
+}
+
+footer a:link,
+footer a:hover,
+footer a:active,
+footer a:visited {
+  color: rgb(196, 68, 68);
+}
+
+.socialmediaIcons {
+  border-radius: 2em;
+}
+
+.social-menu ul {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+.social-menu {
+  display: block;
+  width: 100px;
+  margin: 50px auto;
+}
+.social-menu ul li {
+  list-style: none;
+  font-size: 25px;
+  line-height: 50px;
+  transition: 0.5s;
+  display: block;
+}
+
+.social-menu ul li a {
+  display: block;
+  width: 50px;
+  height: 50px;
+  border-radius: 70%;
+  text-align: center;
+  transition: 0.5s;
+  transform: translate(0, 0px);
+  box-shadow: 0px 7px 5px rgba(0, 0, 0, 0.5);
+  margin: 10px;
+}
+.social-menu ul li a:hover {
+  transform: rotate(0deg) skew(0deg) translate(0, -10px);
+}
+.social-menu ul li:nth-child(1) a:hover {
+  background-color: #3b5999;
+}
+.social-menu ul li:nth-child(2) a:hover {
+  background-color: #cd201f;
+}
+.social-menu ul li:nth-child(3) a:hover {
+  background-color: #55acee;
+}
